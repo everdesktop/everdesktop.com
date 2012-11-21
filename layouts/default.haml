@@ -21,7 +21,10 @@
     #{ og_tag(@og) }
     #{ og_tag(@article, :article) }
     %link{:rel =>"stylesheet", :type =>"text/css", :href =>"/stylesheets/screen.css", :media =>"screen"}
-    %link{:rel =>"stylesheet", :type =>"text/css", :href =>"http://fonts.googleapis.com/css?family=ABeeZee", :media =>"screen"}
+    %script{:type => "text/javascript", :src => "//use.typekit.net/ixq2rgu.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+
   %body
     = fb_root(@locale)
     #main
